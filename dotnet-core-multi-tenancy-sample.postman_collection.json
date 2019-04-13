@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "ddce4993-2893-412c-9b9a-8e1b2bbb89df",
+		"name": "testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Tenant Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/test/tenant",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"test",
+						"tenant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get DB value",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/test-db/hello",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"test-db",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set DB value",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "text/plain",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "value",
+							"value": "I'm Tenant A",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/test-db/hello",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"test-db",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get File",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/api/test-file/Capture3.png",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"test-file",
+						"Capture3.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set File",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/test-file",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"test-file"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
