@@ -12,7 +12,6 @@ namespace dotnet_core_multi_tenancy_sample.Tenants
             _tenant = tenant;
         }
 
-
         public void Save(IFormFile file)
         {
             var path = Path.Combine(_tenant.FileDirectory, file.FileName);
@@ -26,7 +25,6 @@ namespace dotnet_core_multi_tenancy_sample.Tenants
                 file.CopyTo(stream);
             }
         }
-
 
         public MemoryStream Load(string fileName)
         {

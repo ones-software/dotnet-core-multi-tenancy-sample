@@ -12,8 +12,9 @@ namespace dotnet_core_multi_tenancy_sample.Tenants
             _next = next;
         }
 
-
-        public async Task Invoke(HttpContext context, TenantResolver tenantResolver, TenantContext tenantContext)
+        public async Task Invoke(HttpContext context,
+            TenantResolver tenantResolver,
+            TenantContext tenantContext)
         {
             var tenant = tenantResolver.ResolveByHost(context.Request.Host.ToString());
             tenantContext.Tenant = tenant;

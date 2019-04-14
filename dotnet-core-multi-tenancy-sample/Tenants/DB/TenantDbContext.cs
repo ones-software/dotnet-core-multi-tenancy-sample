@@ -15,11 +15,7 @@ namespace dotnet_core_multi_tenancy_sample.Tenants.DB
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(_tenant.ConnectionString);
-        }
-
-        public void Initialize()
-        {
-            Database.Migrate();
+            base.OnConfiguring(optionsBuilder);
         }
     }
 }
