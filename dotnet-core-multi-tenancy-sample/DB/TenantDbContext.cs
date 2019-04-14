@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using dotnet_core_multi_tenancy_sample.Tenants;
+using Microsoft.EntityFrameworkCore;
 
-namespace dotnet_core_multi_tenancy_sample.Tenants.DB
+namespace dotnet_core_multi_tenancy_sample.DB
 {
     public class TenantDbContext : DbContext
     {

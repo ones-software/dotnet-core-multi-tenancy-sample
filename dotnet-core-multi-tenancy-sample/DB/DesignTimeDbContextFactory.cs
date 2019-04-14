@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore.Design;
+﻿using dotnet_core_multi_tenancy_sample.Tenants;
+using Microsoft.EntityFrameworkCore.Design;
 
-namespace dotnet_core_multi_tenancy_sample.Tenants.DB
+namespace dotnet_core_multi_tenancy_sample.DB
 {
     public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<TenantDbContext>
     {

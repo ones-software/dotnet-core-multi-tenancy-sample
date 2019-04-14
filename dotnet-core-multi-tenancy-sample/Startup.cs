@@ -1,5 +1,6 @@
-﻿using dotnet_core_multi_tenancy_sample.Tenants;
-using dotnet_core_multi_tenancy_sample.Tenants.DB;
+﻿using dotnet_core_multi_tenancy_sample.DB;
+using dotnet_core_multi_tenancy_sample.Files;
+using dotnet_core_multi_tenancy_sample.Tenants;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;

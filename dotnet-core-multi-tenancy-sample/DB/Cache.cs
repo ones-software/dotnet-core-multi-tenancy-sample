@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace dotnet_core_multi_tenancy_sample.Tenants.DB
+namespace dotnet_core_multi_tenancy_sample.DB
 {
     public class Cache
     {

@@ -1,4 +1,4 @@
-﻿using dotnet_core_multi_tenancy_sample.Tenants.DB;
+﻿using dotnet_core_multi_tenancy_sample.DB;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_core_multi_tenancy_sample.Controllers

@@ -1,4 +1,5 @@
-﻿using dotnet_core_multi_tenancy_sample.Tenants;
+﻿using dotnet_core_multi_tenancy_sample.Files;
+using dotnet_core_multi_tenancy_sample.Tenants;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;

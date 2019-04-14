@@ -1,7 +1,8 @@
 ﻿using System.IO;
+using dotnet_core_multi_tenancy_sample.Tenants;
 using Microsoft.AspNetCore.Http;
 
-namespace dotnet_core_multi_tenancy_sample.Tenants
+namespace dotnet_core_multi_tenancy_sample.Files
 {
     public class TenantFileService
     {
